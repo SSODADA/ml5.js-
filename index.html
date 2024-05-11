@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #files {
+            margin: 10px;
+        }
+        #preview {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        #defaultCanvas0{
+            display: none;
+        }
+        .result{
+            width: 500px;
+            text-align: left;
+            margin-top: 16px;
+            font-size: 18px;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    
+        <h1>머신러닝 Example : ML5.js</h1>
+
+    <p>분석할 이미지를 선택해 주세요.</p>
+    <input type='file' id="files" onchange="readURL(this);" />
+    <img id="preview" src="images/cat.jpg" alt="your image" /> 
+
+
+
+    
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
